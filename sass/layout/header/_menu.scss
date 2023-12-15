@@ -1,0 +1,41 @@
+.menu {
+    &__link {
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        
+        color: var(--primary-text-color);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        
+       
+        transition: color var(--transition-time) var(--timing-function);
+       
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+        
+        &--current {
+            color: var(--accent-color);
+        }
+        &--current::after {
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            content: "";
+            height: 4px;
+            width: 100%;
+            background: #2196F3;
+            border-radius: 2px;
+        }
+    }
+    &__item {
+        position: relative;
+    }
+}
+
+

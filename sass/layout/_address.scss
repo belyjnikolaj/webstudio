@@ -1,0 +1,45 @@
+.address {
+    &__location {
+        color: var(--accent-text-color);
+        font-style: normal;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+    
+        color: var(--secondary-text-color);
+    
+        transition: color var(--transition-time) var(--timing-function);
+    
+        &:hover,
+        &:focus {
+            color: var(--accent-color); 
+        }
+    }
+    &__link {
+        color: var(--footer-contact-color);
+        font-style: normal;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+    
+        transition: color var(--transition-time) var(--timing-function);
+
+
+    
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+    }
+    &__item {
+        @include for-tablet-landscape-up-max {
+            text-align: center;
+        } 
+        
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
+    }
+} 

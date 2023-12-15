@@ -1,0 +1,36 @@
+.client-card {
+    
+    &__link {
+        display: flex;
+        border-radius: 4px;
+        
+        width: 130px;
+        height: 92px;
+    
+        fill: var(--primary-icons-color);
+        border: 1px solid var(--primary-icons-color);
+    
+        transition: fill var(--transition-time) var(--timing-function), 
+            border var(--transition-time) var(--timing-function);
+            
+        @include for-tablet-portrait-up {
+            width: 210px;
+        }
+        @include for-tablet-landscape-up {
+            width: 226px;
+        }
+        @include for-desktop-up {
+            width: 170px;
+        }
+
+        &:hover,
+        &:focus {
+            fill: var(--accent-color);
+            border: 1px solid var(--accent-color);
+        }
+    }
+
+    &__icon {
+        margin: auto;   
+    }
+}

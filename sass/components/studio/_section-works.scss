@@ -1,0 +1,22 @@
+.section-works {
+    padding-top: 0;
+    @include for-tablet-landscape-up-max {
+        display: none;
+        
+    }
+
+    &__list {
+        display: flex;   
+    }
+    &__item {
+        position: relative;
+        flex-basis: calc((100% - 2 * var(--card-set-gap)) / 3);
+        margin-right: var(--card-set-gap);
+        
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+    }
+}
+
+

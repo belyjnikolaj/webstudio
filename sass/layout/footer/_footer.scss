@@ -1,0 +1,186 @@
+.footer {
+    background-color: var(--footer-bgc-color);
+    padding: 60px 0;
+
+    &__box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        
+        @include for-desktop-up {
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+        }
+        
+    } 
+    
+    &__tablet-container {
+        margin-bottom: 60px;
+        @include for-tablet-landscape-up {
+            display: flex;
+            justify-content: space-around;
+            align-items: baseline;
+
+            width: 768px;
+            
+        }
+        @include for-desktop-up {
+            justify-content: flex-start;
+            margin-bottom: 0;
+        }
+        
+            
+    }
+    &__contact {
+       margin: 0 auto 60px auto;
+       
+        @include for-tablet-landscape-up {
+            margin: 0;
+        }   
+        @include for-desktop-up {
+            margin-right: 70px;
+
+        }
+
+    }
+    &__logo {    
+            display: block;
+            text-align: center;
+            margin: 0 auto 28px auto;
+        
+        @include for-desktop-up {
+            display: inline-block;    
+            margin-bottom: 28px;
+            text-decoration: none;
+        }
+        &-secondname {
+            color:var(--accent-text-color);
+        }
+    }
+   
+    &__network-title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-align: center;
+        text-transform: uppercase;
+    
+        color: var(--secondary-text-color);
+        margin-bottom: 20px;
+        
+        @include for-desktop-up {
+            text-align: left;
+        } 
+    } 
+    &__network-link {
+        fill: var(--secondary-icons-color);
+        background-color: rgba(255, 255, 255, 0.1);
+    
+        transition: background-color var(--transition-time) var(--timing-function), 
+            fill var(--transition-time) var(--timing-function);
+        
+        &:hover,
+        &:focus {
+            background-color: var(--accent-color);
+            fill: var(--secondary-icons-color);
+        }
+    }
+    @include for-desktop-up {
+        &__form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+        }
+    }
+    &__form-box {
+        width: 300px;
+        
+        @include for-tablet-portrait-up {
+            width: 450px;
+        }
+        @include for-desktop-up {
+            margin-left: auto;
+            width: 570px;
+        }
+
+    }
+    &__form-title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        text-align: center;
+
+        margin-bottom: 20px;
+    
+        color: var(--secondary-text-color);
+        @include for-desktop-up {
+            text-align: left;
+        }
+    }
+
+    &__field-input{
+        color: var(--secondary-text-color);
+        
+        height: 50px;
+        width: 100%; 
+        padding: 0 12px;  
+        outline: none;
+    
+        background-color: transparent;
+        box-sizing: border-box;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+
+        margin-bottom: 20px;
+
+        @include for-desktop-up {
+            margin-bottom: 0;
+            width: 358px;
+            
+        }
+
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+    }
+    &__button {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        
+        width: 200px;
+        height: 50px;
+    
+        padding: 10px 28px;
+        margin: 0 auto; 
+        
+        border-radius: 4px;
+        border-color: transparent;
+        
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    
+        transition: background-color var(--transition-time) var(--timing-function);
+    
+        &:hover,
+        &:focus {
+            background-color: var(--btnprimary-bgc-color);
+        }
+        &-title {
+            display: inline-block;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.88;
+            letter-spacing: 0.06em;
+        
+            color: var(--secondary-text-color);
+        }
+    }
+}

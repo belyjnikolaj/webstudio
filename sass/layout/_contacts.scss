@@ -1,0 +1,66 @@
+.contact {
+    
+    
+    &__type {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+    
+        display: flex;
+        align-items: center;
+        
+        color: var(--title-text-color);
+    
+        transition: color var(--transition-time) var(--timing-function);
+
+        
+        
+        @include for-desktop-up {
+            font-size: 14px;
+            line-height: 1.14;
+        }
+
+        &--active {
+            padding-top: 32px;
+            padding-bottom: 32px;
+
+            @include for-tablet-landscape-up-only {
+                padding: 0;
+            }
+        }
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+       
+    }
+    &__icon {
+        display: flex;
+        margin-right: 10px;
+        fill: currentColor;
+        
+        &-mail--small {
+            width: 14px;
+            height: 10px;
+            
+            @include for-desktop-up {
+                width: 16px;
+                height: 12px;
+            }
+        }
+
+        &-phone--small {
+            width: 10px;
+            height: 14px;
+            
+            @include for-desktop-up {
+                width: 10px;
+                height: 16px;
+            }
+        }
+    }
+}

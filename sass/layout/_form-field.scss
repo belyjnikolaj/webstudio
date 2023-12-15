@@ -1,0 +1,75 @@
+.form-field {
+   
+    &__control {
+        position: relative;
+    }
+    &__label {
+        font-size: 12px;
+        line-height: 1.1667;
+        letter-spacing: 0.01em;
+    
+        display: block;
+        
+        color: var(--title-text-color);
+    }
+    &__input {
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+    
+        display: block;
+    
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        outline: none;
+    
+        &:focus {
+            border-color: var(--accent-color);
+        }
+    }
+    &__textarea {
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        
+        display: block;
+        
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        outline: none;
+        resize: none;
+    
+        &::placeholder {
+            font-size: 12px;
+            line-height: 1.1667;
+            letter-spacing: 0.01em;
+    
+            color: rgba(117, 117, 117, 0.5); 
+        }
+        &:focus {
+            border-color: var(--accent-color);
+        }
+    }
+    &__checkbox {
+            font-size: 12px;
+            line-height: 1.17;
+        letter-spacing: 0.03em;
+        text-align: center;
+        
+        color: #757575;
+        
+        @include for-desktop-up {
+            font-size: 14px;
+            line-height: 1.71;
+        }
+    
+        &-input {
+            appearance: none;
+        }
+        &-label {
+            position: relative;
+            padding-left: 24px;
+            display: block;
+        }
+    }
+}

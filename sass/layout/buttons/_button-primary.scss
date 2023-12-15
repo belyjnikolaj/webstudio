@@ -1,0 +1,13 @@
+.button__primary {
+    border-radius: 4px;
+    padding: 10px 32px;
+    border-color: transparent;
+    cursor: pointer;
+
+    transition: background-color var(--transition-time) var(--timing-function);
+
+    &:hover,
+    &:focus {
+    background-color: var(--btnprimary-bgc-color);
+}
+}

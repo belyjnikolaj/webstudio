@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'), 
+         url('../fonts/roboto-v30-latin-regular.woff') format('woff'); 
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+            url('../fonts/roboto-v30-latin-500.woff2') format('woff2'), 
+            url('../fonts/roboto-v30-latin-500.woff') format('woff'); 
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+            url('../fonts/roboto-v30-latin-700.woff2') format('woff2'), 
+            url('../fonts/roboto-v30-latin-700.woff') format('woff'); 
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+            url('../fonts/roboto-v30-latin-900.woff2') format('woff2'), 
+            url('../fonts/roboto-v30-latin-900.woff') format('woff'); 
+}
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/raleway-v28-latin-regular.woff2') format('woff2'),
+         url('../fonts/raleway-v28-latin-regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+            url('../fonts/raleway-v28-latin-700.woff2') format('woff2'), 
+            url('../fonts/raleway-v28-latin-700.woff') format('woff'); 
+}
+
+:root {
+    --primary-text-color: #212121;
+    --secondary-text-color: #ffffff;
+    --primary-icons-color: #AFB1B8;
+    --secondary-icons-color: #ffffff;
+    --title-text-color: #757575;
+    --accent-color: #2196F3;
+    --accent-text-color: #ffffff;
+    --logo-secondname-color: #000000;
+    --footer-contact-color: rgba(255, 255, 255, 0.6);
+    --primary-bgc-color: #ffffff;
+    --hero-bgc-color: #2F303A66;
+    --footer-bgc-color: #2F303A;
+    --secondary-bgc-color: #F5F4FA;
+    --btnprimary-bgc-color: #188CE8;
+    --card-set-gap: 30px;
+    --card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    --project-shadow: 0px 4px 4px 0px #00000040;
+    --border-header: 1px solid #ECECEC;
+    --border-card: 1px solid #EEEEEE;
+
+    --transition-time: 250ms;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+body.modal-open {
+    overflow: hidden;
+}

@@ -1,0 +1,44 @@
+.section-hero {
+    background-color: var(--hero-bgc-color);
+    color: var(--accent-text-color);
+    text-align: center;
+    padding: 118px 0px;
+        
+    @include for-desktop-up {
+        padding: 200px 0px;
+    } 
+    &__overlay {
+        max-width: 320px;
+        margin: 0px auto;
+
+        @include for-tablet-portrait-up {
+            max-width: 480px;
+        }
+        @include for-tablet-landscape-up {
+            max-width: 768px;
+        }    
+        @include for-desktop-up {
+            max-width: 1600px;
+        }  
+    }
+    &__title {
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.62;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        
+        max-width: 360px;
+        
+        margin: 0px auto 34px;
+
+        color: var(--secondary-text-color);
+    
+        @include for-desktop-up {
+            font-size: 44px;
+            line-height: 1.36;
+            max-width: 696px;
+        }
+    }
+}
